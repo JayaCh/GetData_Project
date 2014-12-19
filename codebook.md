@@ -66,22 +66,20 @@ Following clean up of data has been performed:
 All the features are normalised values bounded within [-1,1] and hence contain no units. In the variable names 'f' indicate frequency domain signals and 't' indicate time domain signals.
 
 **subject**
-
 Subject id from 1 to 30
 
    * subject
 
 **activity**
-
 Factor with 6 values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, 
 STANDING, LAYING
 
    * activity
 
+**BodyAcc**
 The time domain acceleration data was seperated into *body and gravity acceleration 
 signals*. The measurements are made along X, Y and Z axes. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity. 
 
-**BodyAcc**
    * tBodyAccMeanX
    * tBodyAccMeanY
    * tBodyAccMeanZ
@@ -90,6 +88,9 @@ signals*. The measurements are made along X, Y and Z axes. The tidy data set con
    * tBodyAccStdZ
    
 **GravityAcc**
+The time domain acceleration data was seperated into *body and gravity acceleration 
+signals*. The measurements are made along X, Y and Z axes. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity. 
+
    * tGravityAccMeanX
    * tGravityAccMeanY
    * tGravityAccMeanZ
@@ -97,9 +98,9 @@ signals*. The measurements are made along X, Y and Z axes. The tidy data set con
    * tGravityAccStdY
    * tGravityAccStdZ
    
+**BodyAccJerk**
 To obain Jerk signals, *body linear acceleration* in the time domain is derived along the X, Y and Z axes. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity. 
 
-**BodyAccJerk**
    * tBodyAccJerkMeanX
    * tBodyAccJerkMeanY
    * tBodyAccJerkMeanZ
@@ -107,19 +108,19 @@ To obain Jerk signals, *body linear acceleration* in the time domain is derived 
    * tBodyAccJerkStdY
    * tBodyAccJerkStdZ
 
+**BodyGyro**
 The measurements of *time domain gyroscope* data are made along X, Y and Z axes. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity.
 
-**BodyGyro**
    * tBodyGyroMeanX
    * tBodyGyroMeanY
    * tBodyGyroMeanZ
    * tBodyGyroStdX
    * tBodyGyroStdY
-   * tBodyGyroStdZ
+   * tBodyGyroStdZ    
    
-To obain Jerk signals, the *angular velocity* is derived in the time domain along the X, Y and Z axes. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity.    
-   
-**BodyGyroJerk**   
+**BodyGyroJerk**
+To obain Jerk signals, the *angular velocity* is derived in the time domain along the X, Y and Z axes. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity.
+
    * tBodyGyroJerkMeanX
    * tBodyGyroJerkMeanY
    * tBodyGyroJerkMeanZ
@@ -127,9 +128,9 @@ To obain Jerk signals, the *angular velocity* is derived in the time domain alon
    * tBodyGyroJerkStdY
    * tBodyGyroJerkStdZ
   
+**Mag**
 The *magnitude of the 3 three-dimensional signals* are calculated using the Euclidean norm. The tidy data set contains average of the mean (Mean) and standard deviation (Std), grouped by subject and activity. 
 
-**Mag**
    * tBodyAccMagMean
    * tBodyAccMagStd
    * tGravityAccMagMean
@@ -141,13 +142,12 @@ The *magnitude of the 3 three-dimensional signals* are calculated using the Eucl
    * tBodyGyroJerkMagMean
    * tBodyGyroJerkMagStd
 
-
+**f**
 The next set of variables are the *frequency domain signals*, obtained by 
 passing the time domain data described above through a Fast Fourier Transform 
 (FFT). For a more detailed description of each of the variables, see the 
 corresponding time domain variables above. 
 
-**f**
    * fBodyAccMeanX
    * fBodyAccMeanY
    * fBodyAccMeanZ

@@ -1,6 +1,5 @@
 ==================================================================
 Getting and Cleaning Data - Project
-Version 1.0
 ==================================================================
 
 
@@ -30,7 +29,7 @@ The following steps have been performed by the code in run_analysis.R to prepare
 - `README.md`
 - `run_analysis.R`: contains the R code to clean the original data and write the tidy data to a text file
 - `codebook.md`: data to indicate all the variables and summaries calculated, along with units
-- 'tidydata.txt': the output text file
+- `tidydata.txt`: the output text file
 
 Notes: 
 ======
